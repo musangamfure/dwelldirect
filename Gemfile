@@ -4,6 +4,7 @@ ruby "3.2.4"
 
 
 gem "bootsnap", require: false
+gem 'devise', '~> 4.9', '>= 4.9.3'
 gem "importmap-rails"
 gem "jbuilder"
 
@@ -15,6 +16,7 @@ gem "sqlite3", "~> 1.4"
 
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "turbo-rails"
+gem "tailwindcss-rails", "~> 2.6"
 
 
 group :development, :test do
@@ -27,4 +29,4 @@ group :development do
 end
 
 
-gem "tailwindcss-rails", "~> 2.6"
+
