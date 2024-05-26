@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dwelldirect</title>
+    <title>DwellDirect | Holiday rentals, cabins, beach houses and more</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <%= favicon_link_tag 'favicon.ico' %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <%= yield %>
+    <main >
+      <%= render 'layouts/header'%>
+      <%= yield %>
+    </main>
   </body>
 </html>
